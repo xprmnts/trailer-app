@@ -6,7 +6,7 @@ import fresh_tomatoes  # required to render website html, css and js
 
 
 # API key for OMDB API:
-apiKey = 'a7ab3c0e'
+apiKey = ''#insert API Key
 
 # Define movies list to store individual movie imdb id and youtube video
 # trailer ids
