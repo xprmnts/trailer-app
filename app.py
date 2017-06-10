@@ -1,8 +1,8 @@
 # Import required packages
 import requests  # required to handle requests to OMDB API (movie data)
 import json  # required to handle API response object
-import movie  # required to create movie object as a class of Movie
-import site  # required to render website html, css and js
+import film  # required to create movie object as a class of Movie
+import fresh_tomatoes  # required to render website html, css and js
 
 
 # API key for OMDB API:
@@ -37,10 +37,10 @@ for movie in movies:
     movieJSON[
         'Poster'] = 'http://img.omdbapi.com/?i=%s&h=%s&apikey=%s' % (
         movie[0], '480', apiKey)
-    movieData.append(Movie(movieJSON['Title'], movieJSON['Poster'],
+    movieData.append(film.Movie(movieJSON['Title'], movieJSON['Poster'],
                            movieJSON['Trailer'], movieJSON['Year'],
                            movieJSON['Rated'], movieJSON['Released'],
                            movieJSON['imdbRating']))
 
 # Pass movieData to the website rendering template
-site.open_movies_page(movieData)
+fresh_tomatoes.open_movies_page(movieData)

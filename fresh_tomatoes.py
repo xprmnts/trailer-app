@@ -1,9 +1,7 @@
 import webbrowser
 import os
 import re
-# Only notable changes from the given fresh_tomatoes file
-# were related to image size in the grid, and added overlay
-# to display movie data content
+
 
 # Styles and scripting for the page
 main_page_head = '''
